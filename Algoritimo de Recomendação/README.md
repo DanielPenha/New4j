@@ -6,8 +6,8 @@ Você foi contratado para desenvolver um sistema de recomendação de músicas q
 - Utilizar consultas Cypher para gerar recomendações personalizadas com base em conexões no grafo.
 
 ## Técnicas possíveis para conexões no grafico
-Queries
-GDS > PageRank
-Similaridade
-Comunidades
-Caminhos
+- Queries
+- GDS > PageRank
+- Similaridade
+- Comunidades
+- Caminhos
