@@ -1,11 +1,11 @@
-Modelagem de Dados em Grafos de um Serviço de Streaming
+# Modelagem de Dados em Grafos de um Serviço de Streaming
 
 Desafio New4J: Modelo de Grafo para Serviço de Filmes e Séries
 1. Modelo de Grafo – Diagrama ou Esboço
 
 O modelo de grafo proposto para o serviço inclui as seguintes entidades e conexões:
 
-Entidades (Nós)
+### Entidades (Nós)
 User: Representa os usuários.
 Movie: Representa filmes.
 Serie: Representa séries.
@@ -29,7 +29,7 @@ Esboço do Modelo de Grafo
 (Director) --[DIRECTED]--> (Movie)
 (Director) --[DIRECTED]--> (Serie)
 
-2. Script Cypher
+### 2. Script Cypher
 Criação de Constraints
 
 O script abaixo cria as constraints para garantir a unicidade dos IDs dos nós no banco de dados:
@@ -41,7 +41,7 @@ CREATE CONSTRAINT ON (g:Genre) ASSERT g.name IS UNIQUE;
 CREATE CONSTRAINT ON (a:Actor) ASSERT a.id IS UNIQUE;
 CREATE CONSTRAINT ON (d:Director) ASSERT d.id IS UNIQUE;
 
-População do Grafo
+### População do Grafo
 
 O script abaixo popula o grafo com 3 usuários, 3 filmes/séries, 3 gêneros, 3 atores e 3 diretores. Para expandir para 15 registros por categoria, basta replicar as linhas conforme necessário.
 // Criando usuários
