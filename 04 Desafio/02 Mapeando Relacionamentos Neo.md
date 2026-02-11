@@ -25,3 +25,26 @@ A tabela abaixo apresenta exemplos de entrada e saída:
 | Lia Vini       | Nao conectados |
 | Lucas Mara     | Lucas-Mara    |
 | Mara Lucas     | Conectados    |
+
+---
+## Modelo base:
+```Python
+# Leitura da lista de usuários
+usuarios = input().strip().split()
+
+# Inicialização das amizades
+amizades = {usuario: set() for usuario in usuarios}
+
+# Leitura dos pares de amizades diretas (ex: "A-B")
+for par in input().strip().split():
+    a, b = par.split('-')
+    amizades[a].add(b)
+    amizades[b].add(a)
+
+# Leitura dos dois usuários para consulta
+usuario1, usuario2 = input().strip().split()
+
+# TODO: Verifique se existe uma cadeia de amizades (direta ou indireta) entre usuario1 e usuario2
+# Imprima 'Conectados' se existir conexão entre eles, senão imprima 'Nao conectados'
+# Dica: Considere usar algum algoritmo de busca (vale a pena estudar) para percorrer os amigos e amigos dos amigos
+```
