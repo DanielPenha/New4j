@@ -13,14 +13,13 @@ Imprima um único número inteiro indicando quantas palavras aparecem em ambos o
 
 A tabela abaixo apresenta exemplos de entrada e saída:
 
-| **Entrada**                      | **Saída**             |
-|-----------------------------------|-----------------------|
-| node,ai,graph,vector              |                       |
-| graph,neo4j,vector,llm            | 2                     |
-| embedding,gpt,cypher              |                       |
-| vector,graph,database             | 0                     |
-| data,model,neo,genai              |                       |
-| genai,data,ai,neo                 | 3                     |
+| **Entrada**                                      | **Saída**             |
+|--------------------------------------------------|-----------------------|
+| node, ai, graph, vector  <br> graph, neo4j, vector, llm | 2                     |
+| embedding, gpt, cypher  <br> vector, graph, database | 0                     |
+| data, model, neo, genai  <br> genai, data, ai, neo | 3                     |
+
+
 
 ---
 ## Modelo base:
