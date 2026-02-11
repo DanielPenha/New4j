@@ -123,5 +123,3 @@ genai,data,ai,neo
 * Usar conjuntos facilita o cálculo da interseção de maneira eficiente.
 * A função `split(',')` converte a string de palavras separadas por vírgula em uma lista, e o `set()` remove quaisquer duplicatas dessa lista automaticamente.
 * A operação de interseção é realizada de maneira eficiente e de fácil compreensão com a função `intersection()`.
-
-Se precisar de mais detalhes ou ajustes, estou à disposição para ajudar!
